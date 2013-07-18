@@ -1,0 +1,85 @@
+// widgets.less
+
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    border-radius: 0px;
+}
+
+select {
+    width: 300px;
+}
+
+.tabbed-widget .tab-content {
+    border-radius: 0px;
+
+}
+
+.input-focus (135, 206, 235);
+
+#searchform #s::-webkit-input-placeholder {
+   color: @searchtextColor;
+}
+
+#searchform #s:-moz-placeholder {
+   color: @linkColor;
+}
+
+.widget ul li {
+    .links();
+}
+
+.widget {
+    color: @widgettextColor;
+}
+
+.widget h4.widget-title {
+    color: @DimGrey;
+    border-bottom: 1px solid @DimGrey;
+}
+
+.standard-ad-125x125 .thumbnails>li .thumbnail {
+    background: @SkyBlue;
+    border-color: @SkyBlue;
+}
+
+// activity tab
+.tabbed-widget .tab-content ul li a {
+    color: @linkColor;
+    font-weight: normal;
+}
+
+
+.tabbed-widget .nav-tabs>li.active>a {
+    border-color: @SkyBlue;
+    background: darken(@navbarBackground, 20%);
+    color: @white;
+}
+
+.tabbed-widget .nav-tabs>li>a {
+    border: 1px solid @SkyBlue;
+    background-color: @SkyBlue;
+    background-image: none;
+    color: @white;
+}
+
+.tabbed-widget .nav-tabs > li.active > a:hover{
+    color: @white;
+    background: darken(@navbarBackground, 20%);
+}
+
+.tabbed-widget .tab-content ul>li {
+    border-bottom: 1px solid @SkyBlue;
+}
+
+.tabbed-widget .tab-content {
+    background: @DarkGrey;
+    border: 1px solid @SkyBlue;
+}
+
+// tag cloud
+.tagcloud a {
+    color: @white;
+    background: @SkyBlue;
+    border-radius: 0;
+    margin: 3px 2px;
+}

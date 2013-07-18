@@ -1,0 +1,59 @@
+// posts.less
+
+.post-header {
+    border-bottom: 1px solid @postborderColor;
+}
+
+.post-meta {
+    border-top: 1px solid @postborderColor;
+}
+
+.post {
+        border-bottom: 4px solid @postborderColor;
+        border-radius: 0px;
+        background: none;
+        color: @postfontColor;
+        box-shadow: none;
+        background-color: @postbackgroundColor;
+}
+
+.post-title,
+.post.format-link .post-title {
+    .links();
+}
+
+.post-title a, .post-title a:visited {
+    color: @linkColor;
+}
+
+.entry-title {
+    color: @posttitleColor;
+}
+
+
+// aside
+.format-aside .aside-date {
+    background: @SkyBlue;
+}
+
+
+// quote
+.format-quote .post-header {
+    background-color: @DarkGrey;
+    background-image: none;
+}
+
+// links
+.post.format-link .post-header {
+    background-color: @DarkGrey;
+}
+
+// status
+.post.format-status .post-header {
+    background-color: @DarkGrey;
+    background-image: none;
+    box-shadow: none;
+}
+
+
+.links();

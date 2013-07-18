@@ -1,0 +1,155 @@
+// navigation.less
+
+/* Above Header
+---------------------------------------------- */
+// Navbar background
+#menu-above-header .navbar-inner,
+.navbar .fill {
+	background-color: @navbarBackground;
+	background-image: none;
+    filter: none;
+}
+
+// Active and Hover menu settings
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover, .navbar .nav .current-menu-item > a,
+.navbar .nav .current-menu-item > a:active {
+    background-color: darken(@navbarBackground, 20%);
+    color: @navbarLinkColor;
+    box-shadow: none;
+}
+
+// Hover effect
+#menu-above-header.navbar .nav-menu > li > a:hover {
+    background-color: darken(@navbarBackground, 20%);
+    color: @navbarLinkColor;
+    box-shadow: none;
+}
+
+// Text
+#menu-above-header.navbar .nav > li > a {
+	color: @navbarLinkColor;
+	font-size: 16px;
+	letter-spacing: 1.5px;
+}
+
+/* Below Header
+---------------------------------------------- */
+// Navbar background
+#menu-under-header .navbar-inner,
+.navbar .fill {
+	background-color: @navbarBackground;
+	background-image: none;
+    filter: none;
+}
+
+// Active and Hover menu settings
+#menu-under-header.navbar .nav .active > a,
+#menu-under-header.navbar .nav .active > a:hover {
+    background-color: darken(@navbarBackground, 20%);
+    color: @navbarLinkColor;
+    box-shadow: none;
+}
+
+// Hover effect
+#menu-under-header.navbar .nav-menu > li > a:hover {
+    background-color: darken(@navbarBackground, 20%);
+    color: @navbarLinkColor;
+    box-shadow: none;
+}
+
+// Text
+#menu-under-header.navbar .nav > li > a {
+    color: @navbarLinkColor;
+    box-shadow: none;
+}
+
+/* Footer
+---------------------------------------------- */
+// Navbar background
+
+#footer,
+#footer #sub-floor {
+	background-color: @navbarBackground;
+}
+
+// Links
+#footer #sub-floor .navbar .nav > li > a {
+	color: @navbarLinkColor;
+}
+
+#footer #sub-floor .navbar .nav > li > a:hover {
+	color: @navbarLinkColorHover;
+}
+
+// Credit
+#footer #sub-floor #credit {
+	color: @navbarLinkColorHover;
+}
+
+#footer #sub-floor #credit a {
+	color: @navbarLinkColor;
+}
+
+#footer #sub-floor #credit a:hover {
+	color: @navbarLinkColorHover;
+}
+
+/* Drop Down / Sub Menus
+---------------------------------------------- */
+// Submenu
+.navbar .dropdown-menu {
+	background: @navbarBackground;
+}
+
+.navbar .dropdown-menu a {
+	color: @navbarLinkColor;
+}
+
+.navbar .dropdown-menu > li a:hover,
+.navbar .dropdown-menu > li.active a:hover {
+    background-color: darken(@navbarBackground, 20%);
+    color: @navbarLinkColor;
+    box-shadow: none;
+}
+
+.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret,
+.navbar .dropdown-menu .caret {
+border-top-color: @navbarLinkColor !important;
+border-bottom-color: @navbarLinkColor !important;
+}
+
+// Hamburger
+.btn.btn-navbar {
+    background: @collapsemenuColor;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar .btn-navbar .icon-bar {
+    background-color: @collapsemenubarsColor;
+    box-shadow: none;
+    }
+
+.btn.btn-navbar:hover {
+    background: @collapsemenuColorHover;
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+}
+
+.navbar .btn-navbar:hover .icon-bar {
+    background-color: @collapsemenubarsColorHover;
+    box-shadow: none;
+}
+
+// Hamburger menu
+.navbar-inverse .nav-collapse .dropdown-menu a {
+    color: @navbarLinkColor;
+    font-weight: 200;
+}
+
+.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+    background: @collapsemenuColor;
+}

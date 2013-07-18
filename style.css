@@ -1,0 +1,428 @@
+@import url('../standard/style.css');
+
+@import url('../standard/css/theme-responsive.css');
+/*
+Theme Name:     Black and Blue Reduex
+Theme URI:      https://github.com/eightbit/standard-child-themes/tree/master/Black-and-Blue
+Description:    Child theme for Standard 3
+Author:         Chris Rouse
+Author URI:     http://www.chrisrouse.us/
+Template:       standard
+Version:        2.0
+*/
+/* Import Standard Styles
+---------------------------------------------------------------------------------- */
+/* Uncomment the line below to enable child theme right-to-left language support. */
+/* @import url( '../standard/rtl.css' ); */
+/* Customizations
+---------------------------------------------------------------------------------- */
+/*
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ CONTENTS /\/\/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\
+
+  1. General
+    - Variables
+    - Miscellaneous
+  2. Navigation
+  3. Header
+  4. Posts
+  5. Comments
+  6. Widgets
+  7. 404
+  8. Mixins
+*/
+/* ---------------------------------------------------------------------- 1. General */
+body {
+  background-color: #000000;
+  background-image: -moz-linear-gradient(top, #060606 0%, #252a30 50%);
+  background-image: -ms-linear-gradient(top, #060606 0%, #252a30 50%);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#060606 0%), to(#252a30 50%));
+  background-image: -webkit-linear-gradient(top, #060606 0%, #252a30 50%);
+  background-image: -o-linear-gradient(top, #060606 0%, #252a30 50%);
+  background-image: linear-gradient(top, #060606 0%, #252a30 50%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@start', endColorstr='#@stop', GradientType=0);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #ffffff;
+}
+.breadcrumb {
+  background: #222222;
+  background-image: none;
+  color: #87ceeb;
+  border-radius: 0px;
+}
+.breadcrumb > li {
+  text-shadow: none;
+}
+.breadcrumb li > a {
+  color: #87ceeb;
+  text-shadow: none;
+}
+.breadcrumb .divider,
+.breadcrumb > li > .divider {
+  color: #87ceeb;
+}
+.thumbnail {
+  border: 1px solid #87ceeb;
+}
+#comments .comment-container .comment-entry .name {
+  color: #87ceeb;
+}
+#comments .bypostauthor > .comment-container {
+  background: #696969;
+}
+/* ---------------------------------------------------------------------- 2. Navigation */
+/* Above Header
+---------------------------------------------- */
+#menu-above-header .navbar-inner,
+.navbar .fill {
+  background-color: #87ceeb;
+  background-image: none;
+  filter: none;
+}
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover,
+.navbar .nav .current-menu-item > a,
+.navbar .nav .current-menu-item > a:active {
+  background-color: #30aadc;
+  color: #ffffff;
+  box-shadow: none;
+}
+#menu-above-header.navbar .nav-menu > li > a:hover {
+  background-color: #30aadc;
+  color: #ffffff;
+  box-shadow: none;
+}
+#menu-above-header.navbar .nav > li > a {
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+/* Below Header
+---------------------------------------------- */
+#menu-under-header .navbar-inner,
+.navbar .fill {
+  background-color: #87ceeb;
+  background-image: none;
+  filter: none;
+}
+#menu-under-header.navbar .nav .active > a,
+#menu-under-header.navbar .nav .active > a:hover {
+  background-color: #30aadc;
+  color: #ffffff;
+  box-shadow: none;
+}
+#menu-under-header.navbar .nav-menu > li > a:hover {
+  background-color: #30aadc;
+  color: #ffffff;
+  box-shadow: none;
+}
+#menu-under-header.navbar .nav > li > a {
+  color: #ffffff;
+  box-shadow: none;
+}
+/* Footer
+---------------------------------------------- */
+#footer,
+#footer #sub-floor {
+  background-color: #87ceeb;
+}
+#footer #sub-floor .navbar .nav > li > a {
+  color: #ffffff;
+}
+#footer #sub-floor .navbar .nav > li > a:hover {
+  color: #000000;
+}
+#footer #sub-floor #credit {
+  color: #000000;
+}
+#footer #sub-floor #credit a {
+  color: #ffffff;
+}
+#footer #sub-floor #credit a:hover {
+  color: #000000;
+}
+/* Drop Down / Sub Menus
+---------------------------------------------- */
+.navbar .dropdown-menu {
+  background: #87ceeb;
+}
+.navbar .dropdown-menu a {
+  color: #ffffff;
+}
+.navbar .dropdown-menu > li a:hover,
+.navbar .dropdown-menu > li.active a:hover {
+  background-color: #30aadc;
+  color: #ffffff;
+  box-shadow: none;
+}
+.navbar-inverse .nav li.dropdown > .dropdown-toggle .caret,
+.navbar .dropdown-menu .caret {
+  border-top-color: #ffffff !important;
+  border-bottom-color: #ffffff !important;
+}
+.btn.btn-navbar {
+  background: #30aadc;
+  border-radius: 0px;
+  box-shadow: none;
+  border: none;
+}
+.navbar .btn-navbar .icon-bar {
+  background-color: #ffffff;
+  box-shadow: none;
+}
+.btn.btn-navbar:hover {
+  background: #ffffff;
+  border-radius: 0px;
+  box-shadow: none;
+  border: none;
+}
+.navbar .btn-navbar:hover .icon-bar {
+  background-color: #30aadc;
+  box-shadow: none;
+}
+.navbar-inverse .nav-collapse .dropdown-menu a {
+  color: #ffffff;
+  font-weight: 200;
+}
+.navbar-inverse .nav-collapse .dropdown-menu a:hover {
+  background: #30aadc;
+}
+/* ---------------------------------------------------------------------- 3. Header */
+#site-title a {
+  color: #ffffff;
+  font-size: 54px;
+  margin-bottom: 10px;
+}
+#site-title a:hover {
+  color: #87ceeb;
+}
+#site-description {
+  color: #696969;
+  font-size: 20px;
+  line-height: 30px;
+}
+/* ---------------------------------------------------------------------- 4. Posts */
+.post-header {
+  border-bottom: 1px solid #696969;
+}
+.post-meta {
+  border-top: 1px solid #696969;
+}
+.post {
+  border-bottom: 4px solid #696969;
+  border-radius: 0px;
+  background: none;
+  color: #ffffff;
+  box-shadow: none;
+  background-color: #222222;
+}
+.post-title a,
+.post.format-link .post-title a {
+  color: #87ceeb;
+}
+.post-title a:hover,
+.post.format-link .post-title a:hover {
+  color: #30aadc;
+}
+.post-title a,
+.post-title a:visited {
+  color: #87ceeb;
+}
+.entry-title {
+  color: #87ceeb;
+}
+.format-aside .aside-date {
+  background: #87ceeb;
+}
+.format-quote .post-header {
+  background-color: #222222;
+  background-image: none;
+}
+.post.format-link .post-header {
+  background-color: #222222;
+}
+.post.format-status .post-header {
+  background-color: #222222;
+  background-image: none;
+  box-shadow: none;
+}
+a {
+  color: #87ceeb;
+}
+a:hover {
+  color: #30aadc;
+}
+/* ---------------------------------------------------------------------- 5. Comments */
+#author-box,
+#comments,
+#pings,
+#no-comments,
+#respond {
+  background: #222222;
+  box-shadow: none;
+  border-radius: 0px;
+  border: none;
+  color: #ffffff;
+}
+#no-comments .title {
+  color: #ffffff;
+}
+#commentform label {
+  color: #ffffff;
+}
+/* ---------------------------------------------------------------------- 6. Widgets */
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  border-radius: 0px;
+}
+select {
+  width: 300px;
+}
+.tabbed-widget .tab-content {
+  border-radius: 0px;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: rgba(135, 206, 235, 0.8);
+  outline: 0;
+  outline: thin dotted \9;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 206, 235, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 206, 235, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(135, 206, 235, 0.6);
+}
+#searchform #s::-webkit-input-placeholder {
+  color: #87ceeb;
+}
+#searchform #s:-moz-placeholder {
+  color: #87ceeb;
+}
+.widget ul li a {
+  color: #87ceeb;
+}
+.widget ul li a:hover {
+  color: #30aadc;
+}
+.widget {
+  color: #ffffff;
+}
+.widget h4.widget-title {
+  color: #696969;
+  border-bottom: 1px solid #696969;
+}
+.standard-ad-125x125 .thumbnails > li .thumbnail {
+  background: #87ceeb;
+  border-color: #87ceeb;
+}
+.tabbed-widget .tab-content ul li a {
+  color: #87ceeb;
+  font-weight: normal;
+}
+.tabbed-widget .nav-tabs > li.active > a {
+  border-color: #87ceeb;
+  background: #30aadc;
+  color: #ffffff;
+}
+.tabbed-widget .nav-tabs > li > a {
+  border: 1px solid #87ceeb;
+  background-color: #87ceeb;
+  background-image: none;
+  color: #ffffff;
+}
+.tabbed-widget .nav-tabs > li.active > a:hover {
+  color: #ffffff;
+  background: #30aadc;
+}
+.tabbed-widget .tab-content ul > li {
+  border-bottom: 1px solid #87ceeb;
+}
+.tabbed-widget .tab-content {
+  background: #222222;
+  border: 1px solid #87ceeb;
+}
+.tagcloud a {
+  color: #ffffff;
+  background: #87ceeb;
+  border-radius: 0;
+  margin: 3px 2px;
+}
+/* ---------------------------------------------------------------------- 7. 404 */
+#nothing-found h1 {
+  color: #87ceeb;
+}
+body.error404 {
+  color: #ffffff;
+}
+/* ---------------------------------------------------------------------- 8. Mixins */
+.links a {
+  color: #87ceeb;
+}
+.links a:hover {
+  color: #30aadc;
+}
+.gradient {
+  background-image: -moz-linear-gradient(top, #060606 0%, #252a30 50%);
+  background-image: -ms-linear-gradient(top, #060606 0%, #252a30 50%);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#060606 0%), to(#252a30 50%));
+  background-image: -webkit-linear-gradient(top, #060606 0%, #252a30 50%);
+  background-image: -o-linear-gradient(top, #060606 0%, #252a30 50%);
+  background-image: linear-gradient(top, #060606 0%, #252a30 50%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@start', endColorstr='#@stop', GradientType=0);
+}
+/* Media Queries
+---------------------------------------------------------------------------------- */
+/* Smartphones */
+@media (max-width: 480px) {
+  
+}
+/* Tablet & Mobile */
+@media (max-width: 979px) {
+  
+}
+/* Mobile to Tablet */
+@media only screen and (max-width: 767px) {
+  
+}
+/* Landscape Tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+  
+}
+/* Desktop */
+@media (min-width: 980px) {
+  
+}

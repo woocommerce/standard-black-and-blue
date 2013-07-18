@@ -1,0 +1,50 @@
+// misc.less
+
+// site background color
+body {
+    background-color: @bodybackground;
+    .gradient;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: @headerColor;
+}
+
+
+// breadcrumbs
+
+.breadcrumb {
+    background: @postbackgroundColor;
+    background-image: none;
+    color: @linkColor;
+    border-radius: 0px;
+}
+
+.breadcrumb > li {
+    text-shadow: none;
+}
+
+.breadcrumb li > a {
+    color: @linkColor;
+    text-shadow: none;
+}
+
+.breadcrumb .divider,
+.breadcrumb > li > .divider {
+    color: @linkColor;
+}
+
+// image borders
+.thumbnail {
+    border: 1px solid @SkyBlue;
+}
+
+// comments
+
+#comments .comment-container .comment-entry .name {
+    color: @linkColor;
+}
+
+#comments .bypostauthor>.comment-container {
+    background: @DimGrey;
+}
